@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>User Redirect</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name = "theme-color">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!--*******************************************************************************-->
+<!--CSS functions for formatting the page-->
+<style type="text/css">
+a{
+color: white;
+font-weight: bold;
+}
+img{
+	height: 20%;
+		width: 20%;
+}
+body {
+   color: black;
+}
+		  .canvas-container{margin: 0 auto;}
+	  .li{
+		  background-color: #800000;
+			  color: #F7C55A;
+
+	  }
+	  .navbar{
+	  background-color: #800000;
+	  }
+	 .container {
+  position: relative;
+  max-width: 1500px; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+	background-image: url("https://cdn2.hercampus.com/hero-images/2018/04/21/9131NanticokeHal_66a.jpg");
+background-size: cover;
+
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+	    background-color: #800000;
+		    color: white;
+
+
+
+}
+</style>
+<script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>
+<!--*******************************************************************************-->
+
+</head>
+<body>
+
+  <nav class="navbar">
+  <div class="container-fluid">
+
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="account.php">My Account</a></li>
+      <li><a href="admin.php">Admin Login</a></li>
+      <li><a href="http://www.salisbury.edu">Salisbury University</a></li>
+      <li><a href="contacts.html">Contact Us</a></li></ul>
+     <ul class="nav navbar-nav navbar-right">
+
+
+
+  </div>
+</nav>
+<div class="container">
+	<!--Section that holds the jumbotron itself and where you can change the text-->
+<section class="text bg-light">
+
+
+	<!--titles for the jumbotron in the bold text-->
+	<h1 title="Home" class="text-center" style="color: white;"><br><br> SALISBURY UNIVERSITY<br>ALUMNI DATABASE</h1>
+
+
+<!--*******************************************************************************-->
+    <section class="text text-center bg-light" style="color: white;">
+	    <br><br><br>
+	    <div class="container">
+<div class="row-sm-6">
+   <div class="col-sm-6">
+  <h3>Search by Individual</h3>
+    	<figure>
+   <a href="accountSearch.php">
+       <img src="https://web.library.uq.edu.au/files/37556/search-icon.png" class="figure-img img-fluid rounded" alt="My picture"style="width: 60%; height: 20%;">
+   </a>
+   <figcaption>    <section class="text text-center bg-light">
+
+       </section>
+   </figcaption>
+</figure>
+</div>
+  <div class="col-sm-6">
+  <h3>Search by Group</h3>
+    	<figure>
+   <a href="standardGroupSearch.php">
+       <img src="https://i.imgur.com/0uNr9RQ.png" class="figure-img img-fluid rounded" alt="My picture"style="width: 80%; height: 30%;">
+   </a>
+   <figcaption>    <section class="text text-center bg-light">
+
+       </section>
+   </figcaption>
+</figure>
+
+</div>
+
+</div>
+</div>
+      </div>
+             <br> </p>
+
+
+
+    </div>
+    <br>
+    </section>
+</div>
+</body>
+<!-- Footer -->
+<footer class="page-footer font-small cyan darken-3">
+
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">	  Salisbury University~1101 Camden Ave. Salisbury, MD
+<br>Â© 2018 Copyright:
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+</html>

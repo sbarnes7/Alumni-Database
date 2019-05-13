@@ -1,0 +1,32 @@
+<html>
+<body>
+<?php
+	if($connection=@mysqli_connect(’localhost’, ’sbull1’, ’hank@b520’, ’sbull1DB’)){
+		print ’<p>Successfully connected to MySQL.</p>’;
+	}else{
+		die(’<p>Could not connect to MySQL because:<b>’.mysql_error().’</b></p>’);
+	}
+	
+	$query="SELECT*FROM Ships";
+	$r=mysqli_query($connection, $query);
+		echo "<table border=’1’>
+			<thead>
+				<tr>
+					<th> name </th>
+					<th> classes </th>
+					<th> launched </th>
+				</tr>
+			</thead>";
+		//<tbody>’;
+	while($row=mysqli_fetch_array($r)){
+		echo "<tr>";
+		echo "<td>" . $row[’name’] . "</td>";
+		echo "<td>" . $row[’class’] . "</td>";
+		echo "<td>" . $row[’launched’] . "</td>";
+		echo "</tr>";
+	}
+	echo "</table>";
+	mysqli_close($connection);
+?>
+</body>
+</html>
